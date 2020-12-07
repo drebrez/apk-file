@@ -132,7 +132,7 @@ func getFilesInfo(d *goquery.Document) []fileInfo {
 		rows.Each(func(i int, s *goquery.Selection) {
 			switch i {
 			case 0:
-				f.path = strings.TrimSpace(s.Text()))
+				f.path = strings.TrimSpace(s.Text())
 			case 1:
 				f.pkg = strings.TrimSpace(s.Text())
 			case 2:
